@@ -14,7 +14,7 @@ export default function About() {
         </button>
         <iframe
           className="rounded-xl w-full h-72"
-          src="https://www.youtube.com/embed/VIDEO_ID"
+          src="https://www.youtube.com/embed/Mv8TlfZrOIY?si=D-ecqZ8DRxQ7BZhw"
           title="Company Video"
         />
       </div>

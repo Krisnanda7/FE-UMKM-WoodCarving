@@ -1,13 +1,15 @@
-import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import HeroShop from "../components/heroShop";
 import ProductList from "../components/productList";
 
 export default function ProductsPage() {
   return (
-    <section className="pt-20">
+    <>
       <Navbar />
+      <HeroShop />
       <ProductList />
       <Footer />
-    </section>
+    </>
   );
 }
