@@ -85,12 +85,12 @@ export default function ProductList() {
       </div>
 
       {/* Product Grid Sorting Harga*/}
-      <div className="flex-1">
+      <div className="flex-1 ">
         <div className="flex justify-between items-center mb-6">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-sm ">
             Showing {filteredProducts.length} of {allProducts.length} results
           </p>
-          <select className="bg-gray-900 border border-gray-700 text-sm text-white rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-amber-500">
+          <select className="border-2 text-sm text-black rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-amber-800">
             <option>Default sorting</option>
             <option>Price: low to high</option>
             <option>Price: high to low</option>

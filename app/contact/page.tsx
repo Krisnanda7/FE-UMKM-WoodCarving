@@ -1,33 +1,32 @@
+import ContactSection from "../components/contactSection";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
 export default function ContactPage() {
   return (
-    <main className=" bg-black text-white">
+    <main className="">
       <Navbar />
-      <h1 className="text-4xl font-extrabold mb-6">Hubungi Kami</h1>
-      <form className="max-w-lg mx-auto space-y-4">
-        <input
-          type="text"
-          placeholder="Nama"
-          className="w-full border p-3 rounded-lg"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full border p-3 rounded-lg"
-        />
-        <textarea
-          placeholder="Pesan Anda"
-          className="w-full border p-3 rounded-lg h-32"
-        ></textarea>
-        <button
-          type="submit"
-          className="bg-amber-500 hover:bg-amber-400 px-6 py-3 rounded-lg font-semibold"
-        >
-          Kirim
-        </button>
-      </form>
+      <ContactSection />
+
+      <div className="py-20 px-5">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
+          {[
+            "product1..jpeg",
+            "product2..jpeg",
+            "product3..jpeg",
+            "product4..jpeg",
+            "product5..jpeg",
+            "product6..jpeg",
+          ].map((img, i) => (
+            <img
+              key={i}
+              src={`/${img}`}
+              alt={`Gallery ${i + 1}`}
+              className="w-full h-64 object-cover rounded-xl"
+            />
+          ))}
+        </div>
+      </div>
       <Footer />
     </main>
   );

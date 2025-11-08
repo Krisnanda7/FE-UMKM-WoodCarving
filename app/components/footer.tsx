@@ -41,12 +41,12 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-6">Find Us</h3>
           <div className="space-y-3 text-gray-400">
             <p>
-              Jl. Raya, Petulu, Kecamatan Ubud,
+              Gianyar City
               <br />
               Kabupaten Gianyar, Bali 80552
             </p>
-            <p className="pt-4">+62 851-0046-9090</p>
-            <p>info@yuyuwoodcarving.com</p>
+            <p className="pt-4">+62 821-4460-3278</p>
+            <p>info@woodcarving.com</p>
           </div>
         </div>
 

@@ -1,11 +1,20 @@
 export default function AboutUs() {
   return (
-    <main className="bg-black text-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-30">
+    <main
+      className="relative text-white py-20 px-6 lg:px-20 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/product5..jpeg')" }}
+    >
+      {/*  overlay gelap agar text tetap terbaca */}
+      <div className="absolute inset-0 bg-black/87"></div>
+
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-30 relative z-10">
         {/* Text */}
         <div className="md:w-1/2">
-          <h1 className=" text-4xl md:text-5xl font-extrabold leading-tight mt-4">
-            ABOUT US
+          <p className="text-sm text-orange-400 tracking-widest">
+            HOME &gt; ABOUT
+          </p>
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4">
+            ABOUT <span className="text-amber-500">US</span>
           </h1>
           <p className="text-gray-300 mt-6">
             Discover our exclusive collection of handcrafted wooden furniture

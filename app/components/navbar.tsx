@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="bg-black text-white fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 lg:px-10">
         {/* Logo */}
-        <div className="font-bold text-2xl tracking-wide">YuyuWood</div>
+        <div className="font-bold text-2xl tracking-wide">WoodCarving</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center text-sm font-medium">
@@ -71,7 +71,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Navbar Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-black shadow-2xl transform transition-transform duration-500 ease-in-out z-40
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
@@ -108,13 +108,13 @@ export default function Navbar() {
           >
             About Us
           </Link>
-          <Link
+          {/* <Link
             href="/blog"
             onClick={() => setIsOpen(false)}
             className="hover:text-amber-500 transition-colors"
           >
             Blog
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
@@ -131,7 +131,7 @@ export default function Navbar() {
             <p>
               <span className="text-white font-semibold">Address:</span>
               <br />
-              Street Name, NY 38954
+              Gianyar, Bali,Indonesia
             </p>
           </div>
           <div className="flex items-center gap-3">

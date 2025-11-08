@@ -1,14 +1,19 @@
-import Image from "next/image";
-
 export default function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 px-6 md:px-16 lg:px-20 py-16 md:py-24 bg-black text-white min-h-screen">
-      <div className="text-left max-w-xl space-y-6 flex-shrink-">
+    <section
+      className="relative bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row items-center
+     justify-center gap-12 lg:gap-20 px-6 md:px-16 lg:px-20 py-16 md:py-24 bg-black text-white min-h-screen"
+      style={{ backgroundImage: "url('/product5..jpeg')" }}
+    >
+      {/*  overlay gelap agar text tetap terbaca */}
+      <div className="absolute inset-0 bg-black/80"></div>
+
+      <div className="text-left max-w-xl space-y-6 flex-shrink- relative z-10">
         <h1 className="py-10 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide">
           HANDMADE WOODEN CREATIONS AND BALINESE WOOD CARVINGS
         </h1>
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-          Explore Yuyu Wood Carving`s exquisite collection of handcrafted wooden
+          Explore Wood Carving`s exquisite collection of handcrafted wooden
           furniture and authentic Balinese carvings. Perfect for adding elegance
           to your home.
         </p>
@@ -32,21 +37,26 @@ export default function HeroSection() {
       </div>
 
       {/* Image Grid */}
-      <div className="md:w-1/2 grid grid-cols-2 gap-4">
+      <div className="md:w-1/2 grid grid-cols-3 gap-4 relative z-10z">
+        {/* Image kiri besar */}
         <img
           src="/product5..jpeg"
           alt="carving1"
-          className="rounded-xl object-cover h-[300px] w-full"
+          className="rounded-xl object-cover h-[400px] w-full col-span-2 row-span-2"
         />
+
+        {/* Image kanan atas */}
         <img
           src="/product2..jpeg"
           alt="carving2"
-          className="rounded-xl object-cover h-[300px] w-full"
+          className="rounded-xl object-cover h-[190px] w-full"
         />
+
+        {/* Image kanan bawah */}
         <img
           src="/product2..jpeg"
           alt="carving3"
-          className="rounded-xl object-cover h-[300px] w-full col-span-2 "
+          className="rounded-xl object-cover h-[190px] w-full"
         />
       </div>
     </section>

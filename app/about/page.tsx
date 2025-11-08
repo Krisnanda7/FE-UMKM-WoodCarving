@@ -28,7 +28,7 @@ export default function About() {
           <div>
             <h4 className="font-bold mb-2 text-lg">The Process</h4>
             <p className="text-gray-600 mb-4">
-              At <b>Yuyu Wood Carving</b>, our process begins with carefully
+              At <b>Wood Carving</b>, our process begins with carefully
               selecting high-quality, sustainable wood. Every step, from carving
               intricate details to achieving a smooth finish, is performed by
               experienced artisans with decades of expertise.
@@ -92,8 +92,8 @@ export default function About() {
       </div>
 
       {/* Gallery */}
-      <div className="py-20">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-2">
+      <div className="py-20 px-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 ">
           {[
             "product1..jpeg",
             "product2..jpeg",
@@ -106,7 +106,7 @@ export default function About() {
               key={i}
               src={`/${img}`}
               alt={`Gallery ${i + 1}`}
-              className="w-full h-64 object-cover"
+              className="w-full h-64 object-cover rounded-xl"
             />
           ))}
         </div>
