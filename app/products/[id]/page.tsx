@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import Navbar from "@/app/components/navbar";
 import ProductDetail from "@/app/components/productDetail";
+import Footer from "@/app/components/footer";
 
 const allProducts = [
   {
@@ -53,9 +54,8 @@ export default function ProductDetailPage() {
   return (
     <main>
       <Navbar />
-      <div className="min-h-screen bg-gray-950 text-white py-10 px-6 lg:px-20">
-        <ProductDetail product={product} />
-      </div>
+      <ProductDetail product={product} />
+      <Footer />
     </main>
   );
 }

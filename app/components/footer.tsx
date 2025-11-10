@@ -9,27 +9,27 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-6">Shop</h3>
           <ul className="space-y-3 text-gray-400">
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-amber-500 transition-colors">
                 Medallions
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-amber-500 transition-colors">
                 Cross Medallions
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-amber-500 transition-colors">
                 Dragon
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-amber-500 transition-colors">
                 Toys
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="hover:text-amber-500 transition-colors">
                 Mask
               </a>
             </li>

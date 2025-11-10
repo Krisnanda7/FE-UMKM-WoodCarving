@@ -5,17 +5,17 @@ export default function HeroShop() {
       style={{ backgroundImage: "url('/product2..jpeg')" }}
     >
       {/*  overlay gelap agar text tetap terbaca */}
-      <div className="absolute inset-0 bg-black/87 "></div>
+      <div className="absolute inset-0 bg-black/80 "></div>
 
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
+      <div className="py-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
         {/* Text */}
         <div className="md:w-1/2">
           <p className="text-sm text-orange-400 tracking-widest">
             HOME &gt; SHOP
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4">
-            EXPLORE OUR HANDMADE WOODEN FURNITURE AND BALINESE CARVINGS
-            COLLECTION
+            EXPLORE OUR HANDMADE WOODEN FURNITURE AND BALINESE{" "}
+            <span className="text-amber-500">CARVINGS COLLECTION</span>
           </h1>
           <p className="text-gray-300 mt-6">
             Discover our exclusive collection of handcrafted wooden furniture

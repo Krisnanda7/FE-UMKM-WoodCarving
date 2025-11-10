@@ -68,13 +68,13 @@ export default function About() {
 
       {/* Stats Section */}
       <div className="bg-gray-50 py-20">
-        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-6 grid md:grid-cols-2  gap-12 items-center">
           <img
             src="/product2..jpeg"
             alt="Carving process"
             className="rounded-xl shadow-lg object-cover"
           />
-          <div className="grid sm:grid-cols-2 gap-8">
+          <div className="place-items-center grid grid-cols-2 gap-8">
             {[
               { icon: Award, value: "15", label: "Years of Experience" },
               { icon: Users, value: "25k", label: "Happy Clients" },

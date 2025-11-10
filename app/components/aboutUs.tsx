@@ -1,15 +1,15 @@
 export default function AboutUs() {
   return (
     <main
-      className="relative text-white py-20 px-6 lg:px-20 bg-cover bg-center bg-no-repeat"
+      className="relative text-white  px-6 lg:px-20  bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/product5..jpeg')" }}
     >
       {/*  overlay gelap agar text tetap terbaca */}
-      <div className="absolute inset-0 bg-black/87"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
 
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-30 relative z-10">
+      <div className=" max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-30 relative z-10">
         {/* Text */}
-        <div className="md:w-1/2">
+        <div className="py-10 md:w-1/2">
           <p className="text-sm text-orange-400 tracking-widest">
             HOME &gt; ABOUT
           </p>

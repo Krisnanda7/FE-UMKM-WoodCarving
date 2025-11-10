@@ -8,9 +8,10 @@ export default function HeroSection() {
       {/*  overlay gelap agar text tetap terbaca */}
       <div className="absolute inset-0 bg-black/80"></div>
 
-      <div className="text-left max-w-xl space-y-6 flex-shrink- relative z-10">
-        <h1 className="py-10 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide">
-          HANDMADE WOODEN CREATIONS AND BALINESE WOOD CARVINGS
+      <div className="py-20 text-left max-w-xl space-y-6 flex-shrink- relative z-10">
+        <h1 className=" text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide">
+          HANDMADE WOODEN CREATIONS AND BALINESE{" "}
+          <span className="text-amber-500">WOOD CARVINGS</span>
         </h1>
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
           Explore Wood Carving`s exquisite collection of handcrafted wooden
