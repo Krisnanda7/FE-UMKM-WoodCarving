@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react";
 export default function ContactSection() {
   // Ganti nomor WhatsApp kamu di sini (gunakan format internasional tanpa 0 di depan)
   const whatsappNumber = "6282144603278";
-  const message = "Halo, saya ingin memesan produk WoodCarving!";
+  const message = "Halo, saya ingin memesan produk WoodCarving !";
 
   const handleWhatsApp = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -25,6 +25,7 @@ export default function ContactSection() {
 
       <div className="py-10 px-5 md:py-20 md:px-20 lg:py-30 lg:px-20  max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
         {/* Left Info Section */}
+
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}

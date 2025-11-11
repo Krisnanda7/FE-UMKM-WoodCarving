@@ -14,9 +14,9 @@ export default function HeroSection() {
           <span className="text-amber-500">WOOD CARVINGS</span>
         </h1>
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-          Explore Wood Carving`s exquisite collection of handcrafted wooden
-          furniture and authentic Balinese carvings. Perfect for adding elegance
-          to your home.
+          Explore Mutra Wood Carving`s exquisite collection of handcrafted
+          wooden furniture and authentic Balinese carvings. Perfect for adding
+          elegance to your home.
         </p>
 
         {/* ROUTE BUTTON KE PRODUCTS */}

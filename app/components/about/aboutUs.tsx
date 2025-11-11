@@ -14,7 +14,7 @@ export default function AboutUs() {
             HOME &gt; ABOUT
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4">
-            ABOUT <span className="text-amber-500">US</span>
+            ABOUT US <span className="text-amber-500">MUTRA WOOD CARVING</span>
           </h1>
           <p className="text-gray-300 mt-6">
             Discover our exclusive collection of handcrafted wooden furniture

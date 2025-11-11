@@ -16,11 +16,8 @@ export default function FilterSidebar({
     "Animal",
     "Balinese Statue",
     "Buddha",
-    "Cross Medallions",
-    "Dragon",
     "Hand",
     "Hindu God",
-    "Kitchen Set",
   ];
 
   const formatRupiah = (value: number) =>

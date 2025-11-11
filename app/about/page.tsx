@@ -1,9 +1,9 @@
 "use client";
 
 import { Hammer, Shield, Award, Users, Layers } from "lucide-react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import AboutUs from "../components/aboutUs";
+import AboutUs from "../components/about/aboutUs";
+import Navbar from "../components/layout/navbar";
+import Footer from "../components/layout/footer";
 
 export default function About() {
   return (
@@ -28,7 +28,7 @@ export default function About() {
           <div>
             <h4 className="font-bold mb-2 text-lg">The Process</h4>
             <p className="text-gray-600 mb-4">
-              At <b>Wood Carving</b>, our process begins with carefully
+              At <b>Mutra Wood Carving</b>, our process begins with carefully
               selecting high-quality, sustainable wood. Every step, from carving
               intricate details to achieving a smooth finish, is performed by
               experienced artisans with decades of expertise.
@@ -48,7 +48,7 @@ export default function About() {
               Here’s what makes us stand out.
             </p>
 
-            <div className="flex gap-8">
+            <div className="flex gap-8 ">
               <div className="flex items-center gap-3">
                 <Hammer className="w-8 h-8 text-orange-600" />
                 <div>
@@ -67,7 +67,7 @@ export default function About() {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gray-50 py-20">
+      <div className=" py-20">
         <div className="container mx-auto px-6 grid md:grid-cols-2  gap-12 items-center">
           <img
             src="/product2..jpeg"

@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="bg-black text-white fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 lg:px-10">
         {/* Logo */}
-        <div className="font-bold text-2xl tracking-wide">WoodCarving</div>
+        <div className="font-bold text-2xl tracking-wide">MutraWoodCarving</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center text-sm font-medium">
@@ -46,13 +46,13 @@ export default function Navbar() {
             href="/wishlist"
             className="hover:text-amber-500 transition-colors"
           >
-            ♡ Wishlist
+            Wishlist 💖
           </Link>
           <Link
             href="/cart"
             className="hover:text-amber-500 text-xl transition-colors"
           >
-            🛒
+            Cart 🛒
           </Link>
           <Link
             href="/account"
@@ -108,13 +108,20 @@ export default function Navbar() {
           >
             About Us
           </Link>
-          {/* <Link
-            href="/blog"
+          <Link
+            href="/cart"
             onClick={() => setIsOpen(false)}
             className="hover:text-amber-500 transition-colors"
           >
-            Blog
-          </Link> */}
+            Cart 🛒
+          </Link>
+          <Link
+            href="/wishlist"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-amber-500 transition-colors"
+          >
+            Wishlist 💖
+          </Link>
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}

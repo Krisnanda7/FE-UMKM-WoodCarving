@@ -1,9 +1,9 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import Navbar from "@/app/components/navbar";
+import Navbar from "@/app/components/layout/navbar";
 import ProductDetail from "@/app/components/productDetail";
-import Footer from "@/app/components/footer";
+import Footer from "@/app/components/layout/footer";
 
 const allProducts = [
   {
@@ -13,12 +13,7 @@ const allProducts = [
     price: "Rp1.600.000",
     description:
       "1 Set Balinese Gate, Handmade Wood Carving, Temple Gate Statue, Balinese Ornament, Home Decor.",
-    images: [
-      "/images/product1.jpg",
-      "/images/product1_2.jpg",
-      "/images/product1_3.jpg",
-      "/images/product1_4.jpg",
-    ],
+    images: ["product2..jpeg", "product2..jpeg", "product2..jpeg"],
     tags: [
       "BaliHomeDecor",
       "BalineseDecor",
@@ -28,6 +23,39 @@ const allProducts = [
       "WoodCarving",
     ],
     sku: "183",
+  },
+  {
+    id: 2,
+    name: "Abstract Mask Face Wood Carving",
+    category: "Abstract",
+    price: "Rp660.000",
+    description:
+      "Beautiful handmade abstract wood mask perfect for modern home decor.",
+    images: ["/images/product2.jpg"],
+    tags: ["Abstract", "Modern", "WoodCarving"],
+    sku: "221",
+  },
+  {
+    id: 3,
+    name: "Baby Buddha Woor Statue",
+    category: "Buddha",
+    price: "Rp560.000",
+    description:
+      "Beautiful handmade abstract wood mask perfect for modern home decor.",
+    images: ["/images/product3..jpeg"],
+    tags: ["Abstract", "Modern", "WoodCarving"],
+    sku: "221",
+  },
+  {
+    id: 4,
+    name: "Abstract Mask Face Wood Carving",
+    category: "Abstract",
+    price: "Rp660.000",
+    description:
+      "Beautiful handmade abstract wood mask perfect for modern home decor.",
+    images: ["/images/product2.jpg"],
+    tags: ["Abstract", "Modern", "WoodCarving"],
+    sku: "221",
   },
   {
     id: 2,

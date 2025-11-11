@@ -6,31 +6,45 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 ">
         {/* Shop Section */}
         <div>
-          <h3 className="text-xl font-bold mb-6">Shop</h3>
+          <h3 className="text-xl font-bold mb-6">Menu</h3>
           <ul className="space-y-3 text-gray-400">
             <li>
-              <a href="#" className="hover:text-amber-500 transition-colors">
-                Medallions
+              <a href={"/"} className="hover:text-amber-500 transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href={"/products"}
+                className="hover:text-amber-500 transition-colors"
+              >
+                Shop
+              </a>
+            </li>
+            <li>
+              <a
+                href={"/about"}
+                className="hover:text-amber-500 transition-colors"
+              >
+                About Us
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-amber-500 transition-colors">
-                Cross Medallions
+                Cart
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-amber-500 transition-colors">
-                Dragon
+                WishList
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-amber-500 transition-colors">
-                Toys
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-amber-500 transition-colors">
-                Mask
+              <a
+                href={"/contact"}
+                className="hover:text-amber-500 transition-colors"
+              >
+                Contact Us
               </a>
             </li>
           </ul>
@@ -38,15 +52,39 @@ export default function Footer() {
 
         {/* Find Us Section */}
         <div>
-          <h3 className="text-xl font-bold mb-6">Find Us</h3>
+          <h3 className="text-xl font-bold mb-6">Find US</h3>
           <div className="space-y-3 text-gray-400">
             <p>
-              Gianyar City
+              Banjar Tampad, Batubulan Kangin, Sukawati
               <br />
               Kabupaten Gianyar, Bali 80552
             </p>
-            <p className="pt-4">+62 821-4460-3278</p>
-            <p>info@woodcarving.com</p>
+            <a
+              href="https://wa.me/6282147324954?text=Saya%20tertarik%20dengan%20produk%20Anda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-amber-500"
+            >
+              082147324954
+            </a>
+            <br />
+            <a
+              href="https://wa.me/6281338166331?text=Saya%20tertarik%20dengan%20produk%20Anda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-amber-500"
+            >
+              081338166331
+            </a>
+            <br />
+            <a
+              href="mailto:mutrawoodcarving@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" hover:text-amber-500"
+            >
+              mutrawoodcarving@gmail.com
+            </a>
           </div>
         </div>
 

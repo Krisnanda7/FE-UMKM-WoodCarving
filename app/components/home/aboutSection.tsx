@@ -7,7 +7,7 @@ export default function About() {
         <div>
           <h2 className="text-4xl font-extrabold mb-6">About Us</h2>
           <p className="text-lg mb-8">
-            <strong> Wood Carving</strong> begins with carefully selecting
+            <strong> Mutra Wood Carving</strong> begins with carefully selecting
             high-quality, sustainable wood. Every step, from carving intricate
             details to achieving a smooth finish, is performed by experienced
             artisans with decades of expertise.
