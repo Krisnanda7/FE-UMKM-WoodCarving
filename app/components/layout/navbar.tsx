@@ -54,12 +54,6 @@ export default function Navbar() {
           >
             Cart 🛒
           </Link>
-          <Link
-            href="/account"
-            className="hover:text-amber-500 transition-colors"
-          >
-            Account
-          </Link>
         </div>
 
         {/* Mobile Menu Button */}

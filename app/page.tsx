@@ -4,6 +4,7 @@ import ProductList from "./components/productList";
 import "./globals.css";
 import Navbar from "./components/layout/navbar";
 import Footer from "./components/layout/footer";
+import HeroMade from "./components/home/heroMade";
 
 export default function HomePage() {
   return (
@@ -18,7 +19,7 @@ export default function HomePage() {
       <About />
 
       {/* 🧰 Product Showcase */}
-      <ProductList />
+      <HeroMade />
 
       {/* 🖼️ Footer */}
       <Footer />
