@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Heart, Shuffle } from "lucide-react";
-import Footer from "./footer";
+import { Heart } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useCartStore } from "@/store/useCartStore";
+import { useWishlistStore } from "@/store/useWishListStore";
 
 export default function ProductDetail({ product }: any) {
   const [mainImage, setMainImage] = useState(product.images[0]);
@@ -10,6 +12,31 @@ export default function ProductDetail({ product }: any) {
 
   const handleQuantity = (type: "inc" | "dec") => {
     setQuantity((q) => (type === "inc" ? q + 1 : q > 1 ? q - 1 : 1));
+  };
+
+  const addToCart = useCartStore((state) => state.addToCart);
+  const addToWishlist = useWishlistStore((state) => state.addToWishlist);
+  const router = useRouter();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: "/product5..jpeg",
+      quantity,
+    });
+    router.push("/cart"); // langsung pindah ke cart
+  };
+
+  const handleAddToWishlist = () => {
+    addToWishlist({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: "/product5..jpeg",
+    });
+    alert(`${product.name} added to wishlist ❤️`);
   };
 
   return (
@@ -68,16 +95,6 @@ export default function ProductDetail({ product }: any) {
             {product.price}
           </p>
 
-          {/* Wishlist dan Compare */}
-          <div className="flex gap-4 mb-6">
-            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-lg hover:border-amber-500 transition">
-              <Heart size={18} /> Wishlist
-            </button>
-            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-lg hover:border-amber-500 transition">
-              <Shuffle size={18} /> Compare
-            </button>
-          </div>
-
           {/* Quantity dan tombol cart */}
           <div className="flex items-center gap-3 mb-6">
             <div className="flex border border-gray-300 rounded-lg">
@@ -101,8 +118,21 @@ export default function ProductDetail({ product }: any) {
               </button>
             </div>
 
-            <button className="bg-amber-600 hover:bg-amber-500 px-8 py-3 rounded-lg text-white font-semibold transition">
+            <button
+              onClick={handleAddToCart}
+              className="bg-amber-600 hover:bg-amber-500 px-8 py-3 rounded-lg text-white font-semibold transition"
+            >
               Add to cart
+            </button>
+          </div>
+
+          {/* Wishlist */}
+          <div className="flex sm  gap-4 mb-6">
+            <button
+              onClick={handleAddToWishlist}
+              className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-lg hover:border-amber-700 transition"
+            >
+              <Heart size={18} /> Wishlist
             </button>
           </div>
 

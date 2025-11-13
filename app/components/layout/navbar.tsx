@@ -50,7 +50,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/cart"
-            className="hover:text-amber-500 text-xl transition-colors"
+            className="hover:text-amber-500  transition-colors"
           >
             Cart 🛒
           </Link>

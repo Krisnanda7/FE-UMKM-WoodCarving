@@ -1,6 +1,5 @@
 import About from "./components/home/aboutSection";
 import HeroSection from "./components/home/heroSection";
-import ProductList from "./components/productList";
 import "./globals.css";
 import Navbar from "./components/layout/navbar";
 import Footer from "./components/layout/footer";
