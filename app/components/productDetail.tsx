@@ -15,7 +15,8 @@ export default function ProductDetail({ product }: any) {
   };
 
   const addToCart = useCartStore((state) => state.addToCart);
-  const addToWishlist = useWishlistStore((state) => state.addToWishlist);
+  const addToWishlist = useWishlistStore((state) => state.toggleWishlist);
+
   const router = useRouter();
 
   const handleAddToCart = () => {
@@ -50,7 +51,7 @@ export default function ProductDetail({ product }: any) {
               alt={product.name}
               className="w-full h-[500px] object-cover"
             />
-            <button className="absolute top-4 right-4 bg-white/80 hover:bg-white p-2 rounded-full shadow">
+            {/* <button className="absolute top-4 right-4 bg-white/80 hover:bg-white p-2 rounded-full shadow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5 text-gray-700"
@@ -65,7 +66,7 @@ export default function ProductDetail({ product }: any) {
                   d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M4 6h8m0 0v12m0-12l8 4v8l-8 4V6z"
                 />
               </svg>
-            </button>
+            </button> */}
           </div>
 
           {/* Thumbnails */}

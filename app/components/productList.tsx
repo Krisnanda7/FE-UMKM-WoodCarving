@@ -45,9 +45,10 @@ const allProducts = [
 
 export default function ProductList() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [priceRange, setPriceRange] = useState([0, 20000000]); // min, max
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 20000000]);
+  // min, max
 
-  // 🔸 Handle klik kategori
+  //  Handle klik kategori
   const handleCategoryChange = (category: string) => {
     setSelectedCategories((prev) =>
       prev.includes(category)
@@ -56,7 +57,7 @@ export default function ProductList() {
     );
   };
 
-  // 🔸 Filter produk berdasarkan kategori dan harga
+  // Filter produk berdasarkan kategori dan harga
   const filteredProducts = allProducts.filter((p) => {
     const matchCategory =
       selectedCategories.length === 0 ||
@@ -65,7 +66,7 @@ export default function ProductList() {
     return matchCategory && matchPrice;
   });
 
-  // 🔸 Format angka ke Rupiah
+  // Format angka ke Rupiah
   const formatRupiah = (num: number) =>
     new Intl.NumberFormat("id-ID", {
       style: "currency",

@@ -3,12 +3,19 @@
 import { useState } from "react";
 import { X, SlidersHorizontal } from "lucide-react";
 
+interface FilterSidebarProps {
+  selectedCategories: string[];
+  onCategoryChange: (category: string) => void;
+  priceRange: [number, number];
+  onPriceChange: (range: [number, number]) => void;
+}
+
 export default function FilterSidebar({
   selectedCategories,
   onCategoryChange,
   priceRange,
   onPriceChange,
-}) {
+}: FilterSidebarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const categories = [
