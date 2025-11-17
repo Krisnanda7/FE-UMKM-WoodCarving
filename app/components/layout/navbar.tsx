@@ -2,9 +2,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, MapPin, Phone, Smartphone, Clock } from "lucide-react";
+import { useCartSidebarStore } from "@/store/userCartSidebarStore";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const openCart = useCartSidebarStore((s) => s.openCart);
 
   return (
     <nav className="bg-black text-white fixed w-full z-50 shadow-lg">
@@ -42,12 +44,12 @@ export default function Navbar() {
 
         {/* Desktop Right Icons */}
         <div className="hidden md:flex gap-6 items-center text-sm">
-          <Link
-            href="/cart"
+          <button
             className="hover:text-amber-500  transition-colors"
+            onClick={openCart}
           >
             Cart 🛒
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -97,19 +99,18 @@ export default function Navbar() {
             About Us
           </Link>
           <Link
-            href="/cart"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-amber-500 transition-colors"
-          >
-            Cart 🛒
-          </Link>
-          <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
             className="hover:text-amber-500 transition-colors"
           >
             Contact Us
           </Link>
+          <button
+            onClick={openCart}
+            className="hover:text-amber-500 transition-colors self-start"
+          >
+            Cart 🛒
+          </button>
         </div>
 
         {/* Contact Info */}
